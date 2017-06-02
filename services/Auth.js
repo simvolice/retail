@@ -134,37 +134,72 @@ module.exports = {
 
     login: async (email) => {
 
-      try {
+    try {
 
 
 
-        const col = dbConnect.getConnect().collection('users');
-
-
-
-
-
-        const result = await col.findOne({email: email});
+      const col = dbConnect.getConnect().collection('users');
 
 
 
 
 
-        return result;
-
-
-      }catch(err) {
+      const result = await col.findOne({email: email});
 
 
 
 
-        return err;
+
+      return result;
 
 
-      }
+    }catch(err) {
 
 
-    },
+
+
+      return err;
+
+
+    }
+
+
+  },
+
+
+    register: async (objParams) => {
+
+    try {
+
+
+
+      const col = dbConnect.getConnect().collection('users');
+
+
+
+
+
+      const result = await col.insertOne({email: email});
+
+
+
+
+
+      return result;
+
+
+    }catch(err) {
+
+
+
+
+      return err;
+
+
+    }
+
+
+  },
 
 
 };

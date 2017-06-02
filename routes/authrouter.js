@@ -136,7 +136,46 @@ router.post('/auth', async (req, res, next) =>{
 
 });
 
+router.post('/register', async (req, res, next) =>{
 
+
+
+
+
+  let result = await AuthService.login(req.body);
+
+
+
+
+  if (validator.checkProps(result) && bcrypt.compareSync(req.body.pass, result.pass)) {
+
+
+    res.json({"code": 0, "sessionToken": jsonwebtoken.sign(result._id.toString(), config.SECRETJSONWEBTOKEN)});
+
+
+  }else {
+
+    res.json({"code": 1});
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
 
 
 
