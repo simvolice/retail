@@ -164,42 +164,10 @@ module.exports = {
     }
 
 
-  },
-
-
-    register: async (objParams) => {
-
-    try {
+  }
 
 
 
-      const col = dbConnect.getConnect().collection('users');
-
-
-
-
-
-      const result = await col.insertOne({email: email});
-
-
-
-
-
-      return result;
-
-
-    }catch(err) {
-
-
-
-
-      return err;
-
-
-    }
-
-
-  },
 
 
 };

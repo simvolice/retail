@@ -1,0 +1,282 @@
+<div class="row" ng-controller="LoginCtrl as ctrl">
+
+<div class="col-md-6 col-md-offset-3">
+    <md-content class="card">
+    <md-tabs md-dynamic-height md-border-bottom md-selected="ctrl.selectedIndex">
+        <md-tab label="Вход">
+            <md-content class="md-padding">
+
+
+                    <div class="card-signup">
+                        <form class="form" method="" action="">
+
+                            <div class="content">
+
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>
+                                </div>
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="password" placeholder="Пароль..." class="form-control"><span class="material-input"></span></div>
+                                </div>
+
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons" style="color: transparent">lock_outline</i>
+										</span>
+                                    <div class="form-group is-empty"><a href="" ng-click="ctrl.resetPassClk()">Восстановить пароль</a><span class="material-input"></span></div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="footer text-center">
+                                <button class="btn btn-primary">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+
+            </md-content>
+        </md-tab>
+        <md-tab label="Регистрация">
+            <md-content class="md-padding">
+
+                <div class="card-signup">
+                    <form class="form" method="" action="">
+
+                        <div class="content">
+
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>
+                                </div>
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="password" placeholder="Пароль..." class="form-control"><span class="material-input"></span></div>
+                                </div>
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="password" placeholder="Пароль еще раз..." class="form-control"><span class="material-input"></span></div>
+                                </div>
+
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">business</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Название компании..."><span class="material-input"></span></div>
+                                </div>
+
+
+
+                                <div class="input-group">
+
+
+                                    <div class="form-group is-empty">
+
+                                        <md-radio-group ng-model="data.group1">
+
+                                            <div class="col-md-1">
+
+                                                <md-radio-button value="TOO" class="md-primary">TOO</md-radio-button>
+
+                                            </div>
+
+                                            <div class="col-md-1 col-md-offset-7">
+
+                                                <md-radio-button value="ИП" class="md-primary"> ИП </md-radio-button>
+
+
+                                            </div>
+
+                                        </md-radio-group>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="fa fa-id-card-o" aria-hidden="true"></i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="ИИН..."><span class="material-input"></span></div>
+                                </div>
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="fa fa-id-card-o" aria-hidden="true"></i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="БИН..."><span class="material-input"></span></div>
+                                </div>
+
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">location_on</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Адрес..."><span class="material-input"></span></div>
+                                </div>
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">phone</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Телефон..."><span class="material-input"></span></div>
+                                </div>
+
+                                <button class="btn btn-primary btn-sm btn-reg" ng-click="ctrl.registerClk()">Регистрация</button>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </md-content>
+        </md-tab>
+
+
+        <md-tab label="Восстановить пароль">
+            <md-content class="md-padding">
+
+                <div class="card-signup">
+                    <form class="form" method="" action="">
+
+                        <div class="content">
+
+
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                                    <div class="form-group is-empty"><input type="text" class="form-control" placeholder="Email..."><span class="material-input"></span></div>
+                                </div>
+
+
+
+
+                                <button class="btn btn-primary btn-sm btn-reg">Восстановить пароль</button>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </md-content>
+        </md-tab>
+
+        <md-tab label="Активация почты">
+            <md-content class="md-padding">
+
+                <div class="card-signup">
+                    <form class="form" method="" action="">
+
+                        <div class="content">
+
+
+
+                            <div class="text-center">
+
+                                <h3>Пожалуйста, проверьте Ваш почтовый ящик чтобы активировать Ваш аккаунт.</h3>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </md-content>
+        </md-tab>
+
+
+
+    </md-tabs>
+    </md-content>
+</div>
+
+
+
+
+
+</div>
