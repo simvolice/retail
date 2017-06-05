@@ -41,40 +41,43 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#pablo">EFFRETAIL<div class="ripple-container"></div></a>
+					<a class="navbar-brand" href="/">EFFRETAIL<div class="ripple-container"></div></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="example-navbar-primary">
 					<ul class="nav navbar-nav navbar-right">
+
+						<li>
+							<a ui-sref="addcashier">
+								<i class="material-icons">person_add</i>
+								Добавить кассира
+							</a>
+						</li>
+
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">account_circle</i>СубМеню
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">account_circle</i>МЕНЮ
 								<b class="caret"></b>
 								<div class="ripple-container"></div></a>
 							<ul class="dropdown-menu dropdown-menu-right">
-								<li class="dropdown-header">Dropdown header</li>
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
+
+								<li><a href="#">Справочник товаров</a></li>
+								<li><a href="#">Товародвижение</a></li>
+								<li><a href="#">Отчеты</a></li>
+								<li><a href="#">Окно кассира</a></li>
+								<li><a href="#">Оборудование</a></li>
+
+
 							</ul>
 						</li>
 
 
+
+
+
 						<li>
 							<a ui-sref="login">
-								<i class="material-icons">settings</i>
-								Войти
-							</a>
-						</li>
-
-
-						<li>
-							<a href="#pablo">
-								<i class="material-icons">account_circle</i>
-								Мой профиль
+								<i class="material-icons">exit_to_app</i>
+								Выйти
 							</a>
 						</li>
 
@@ -100,7 +103,7 @@
 				<div class="container">
 
 					<div class="copyright pull-right">
-						© 2017, made with <i class="material-icons">favorite</i> by Creative Tim for a better web.
+						© 2017, ИП "EFFLIFE"
 					</div>
 				</div>
 			</footer>
@@ -148,6 +151,8 @@
 
 <script src="components/login/loginService.js"></script>
 <script src="components/login/loginController.js"></script>
+<script src="components/addcashier/addcashierController.js"></script>
+<script src="components/addcashier/addcashierService.js"></script>
 
 
 </html>
