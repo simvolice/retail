@@ -23,7 +23,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
       .state('login', {
         url: '/login',
-        templateUrl: 'components/login/loginView.html'
+        templateUrl: 'components/login/loginView.html',
+
+
       })
 
       .state('addcashier', {
@@ -31,5 +33,29 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'components/addcashier/addcashierView.html'
       })
 
+
+      .state('catcateg', {
+        url: '/catcateg',
+        templateUrl: 'components/catalogcateg/catCategView.html'
+      })
+
+
+      .state('subcatcateg', {
+        url: '/subcatcateg',
+        templateUrl: 'components/subcatalogcateg/subcatCategView.html'
+      })
+
+
+      .state('units', {
+        url: '/units',
+        templateUrl: 'components/units/unitsView.html'
+      })
+
+
+
+      .state('goodscatalog', {
+        url: '/goodscatalog',
+        templateUrl: 'components/goodscatalog/goodsView.html'
+      })
 
 });

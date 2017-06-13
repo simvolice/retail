@@ -21,6 +21,7 @@
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
     <link href="assets/css/md-data-table.min.css" rel="stylesheet"/>
     <link href="assets/css/app.css" rel="stylesheet"/>
+    <link href="assets/css/swiper.min.css" rel="stylesheet"/>
 
 
     <!--     Fonts and icons     -->
@@ -54,17 +55,35 @@
 							</a>
 						</li>
 
+
 						<li class="dropdown">
-							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">account_circle</i>МЕНЮ
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">grid_on</i>СПРАВОЧНИКИ
 								<b class="caret"></b>
 								<div class="ripple-container"></div></a>
 							<ul class="dropdown-menu dropdown-menu-right">
 
-								<li><a href="#">Справочник товаров</a></li>
+								<li><a ui-sref="goodscatalog">Справочник товаров</a></li>
+								<li><a ui-sref="catcateg">Справочник категорий</a></li>
+								<li><a ui-sref="subcatcateg">Справочник субкатегорий</a></li>
+								<li><a ui-sref="units">Справочник единиц измерений</a></li>
+
+
+							</ul>
+						</li>
+
+
+
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">menu</i>МЕНЮ
+								<b class="caret"></b>
+								<div class="ripple-container"></div></a>
+							<ul class="dropdown-menu dropdown-menu-right">
+
+
 								<li><a href="#">Товародвижение</a></li>
 								<li><a href="#">Отчеты</a></li>
 								<li><a href="#">Окно кассира</a></li>
-								<li><a href="#">Оборудование</a></li>
+
 
 
 							</ul>
@@ -102,7 +121,7 @@
 			<footer class="footer">
 				<div class="container">
 
-					<div class="copyright pull-right">
+					<div class="pull-right">
 						© 2017, ИП "EFFLIFE"
 					</div>
 				</div>
@@ -119,6 +138,11 @@
 <!-- Material Dashboard javascript methods -->
 	<script src="assets/js/material-dashboard.js"></script>
 	<script src="assets/js/material-kit.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/MorphSVGPlugin.min.js"></script>
+	<script src="assets/js/TextPlugin.min.js"></script>
+
 
 
 
@@ -130,12 +154,14 @@
 <script src="assets/js/angular-ui-router.min.js"></script>
 <script src="assets/js/angular-cookies.min.js"></script>
 <script src="assets/js/angular-resource.min.js"></script>
-<script src="assets/js/ocLazyLoad.min.js"></script>
+<script src="assets/js/angular-sanitize.min.js"></script>
+
 <script src="assets/js/angular-animate.min.js"></script>
 <script src="assets/js/angular-aria.min.js"></script>
 <script src="assets/js/angular-messages.min.js"></script>
 <script src="assets/js/angular-material.min.js"></script>
 <script src="assets/js/md-data-table.min.js"></script>
+<script src="assets/js/fixed-table-header.min.js"></script>
 
 
 
@@ -153,6 +179,14 @@
 <script src="components/login/loginController.js"></script>
 <script src="components/addcashier/addcashierController.js"></script>
 <script src="components/addcashier/addcashierService.js"></script>
+<script src="components/catalogcateg/catCategService.js"></script>
+<script src="components/catalogcateg/catCategController.js"></script>
+<script src="components/subcatalogcateg/subcatCategController.js"></script>
+<script src="components/subcatalogcateg/subcatCategService.js"></script>
+<script src="components/units/unitsController.js"></script>
+<script src="components/units/unitsService.js"></script>
+<script src="components/goodscatalog/goodsController.js"></script>
+<script src="components/goodscatalog/goodsService.js"></script>
 
 
 </html>

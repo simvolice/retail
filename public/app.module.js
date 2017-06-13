@@ -4,15 +4,7 @@
 
 
 
-var app = angular.module('app', ['ngMaterial', 'ui.router', 'oc.lazyLoad', 'md.data.table', 'ngMessages', 'ngResource', 'ngCookies' ]).config(['$ocLazyLoadProvider', function($ocLazyLoadProvider) {
-  $ocLazyLoadProvider.config({
-    debug: true
-  });
-
-
-
-
-}]);
+var app = angular.module('app', ['ngMaterial', "fixed.table.header", 'ui.router', 'md.data.table', 'ngMessages', 'ngResource', 'ngCookies', 'ngSanitize' ]);
 
 
 app.directive('ngFiles', ['$parse', function ($parse) {
@@ -28,7 +20,6 @@ app.directive('ngFiles', ['$parse', function ($parse) {
     link: fn_link
   }
 } ]);
-
 
 
 app.controller('MainCtrl', function ($scope, $location) {

@@ -36,7 +36,7 @@ module.exports = {
 
             const col = dbConnect.getConnect().collection('tokencsrf');
 
-              col.createIndex({ createAt : 1 }, {expireAfterSeconds: '86400'});
+              col.createIndex({ createAt : 1 }, {expireAfterSeconds: 86400});
               col.createIndex({ tokencsrf : 1 }, {unique: true});
 
 

@@ -4,7 +4,7 @@
 
 
 
-angular.module('app').controller('AddCashierCtrl', function ($scope, $ocLazyLoad, $cookies, GetAllSliders, DeleteSlider, $http, $mdToast) {
+angular.module('app').controller('AddCashierCtrl', function ($scope, $cookies, GetAllSliders, DeleteSlider, $http, $mdToast) {
 
 
 

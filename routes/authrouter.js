@@ -22,7 +22,7 @@ const uuidV4 = require('uuid/v4');
 router.use(async (req, res, next) => {
 
 
-  if (req.path === "/gettokencsrf") {
+  if (req.method === "GET") {
 
 
     next();

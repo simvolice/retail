@@ -4,26 +4,38 @@
 
 
 
-angular.module('app').controller('LoginCtrl', function ($scope, $ocLazyLoad, $cookies, GetAllSliders, DeleteSlider, $http) {
+angular.module('app').controller('LoginCtrl', function ($scope, $cookies, GetAllSliders, DeleteSlider, $http) {
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    autoHeight: true,
+    simulateTouch: false
+
+  });
 
 
 
 
 
-
-
-  this.selectedIndex = 0;
 
 
   this.resetPassClk = function () {
-    this.selectedIndex = 2;
+
+    mySwiper.slideTo(2);
+
   };
 
 
   this.registerClk = function () {
-    this.selectedIndex = 3;
+    mySwiper.slideTo(3);
   };
 
+
+  this.toRegisterClk = function () {
+    mySwiper.slideTo(1);
+  };
 
 
 
