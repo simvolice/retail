@@ -58,4 +58,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'components/goodscatalog/goodsView.html'
       })
 
+
+      .state('reports', {
+        url: '/reports',
+        templateUrl: 'components/reports/reportsView.html'
+      })
+
+      .state('windowcashier', {
+        url: '/windowcashier',
+        templateUrl: 'components/windowcashier/windowcashierView.html'
+      })
+
 });

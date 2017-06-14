@@ -13,12 +13,17 @@ angular.module('app').controller('AddCashierCtrl', function ($scope, $cookies, G
 
 
   this.add = function () {
+
+
     $mdToast.show(
         $mdToast.simple()
             .textContent('Вы успешно добавили кассира')
-            .position('bottom right')
+            .position('bottom left')
             .hideDelay(3000)
     );
+
+
+
   };
 
 

@@ -141,3 +141,22 @@ table.md-table td.md-cell {
 
 
 }
+
+.custom__notifacation {
+    margin-bottom: 0;
+}
+
+
+.custom__title__sum {
+    width: 500px;
+    display: block;
+    direction: rtl;
+    margin-left: 450px;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 5vw;
+
+
+}

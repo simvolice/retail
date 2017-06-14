@@ -22,6 +22,7 @@
     <link href="assets/css/md-data-table.min.css" rel="stylesheet"/>
     <link href="assets/css/app.css" rel="stylesheet"/>
     <link href="assets/css/swiper.min.css" rel="stylesheet"/>
+    <link href="assets/css/c3.min.css" rel="stylesheet"/>
 
 
     <!--     Fonts and icons     -->
@@ -32,6 +33,9 @@
 <body ng-controller="MainCtrl">
 
 	<div class="wrapper">
+
+
+
 
 		<nav class="navbar navbar-primary">
 			<div class="container">
@@ -81,8 +85,8 @@
 
 
 								<li><a href="#">Товародвижение</a></li>
-								<li><a href="#">Отчеты</a></li>
-								<li><a href="#">Окно кассира</a></li>
+								<li><a ui-sref="reports">Отчеты</a></li>
+								<li><a ui-sref="windowcashier">Окно кассира</a></li>
 
 
 
@@ -142,6 +146,8 @@
 	<script src="assets/js/TweenMax.min.js"></script>
 	<script src="assets/js/MorphSVGPlugin.min.js"></script>
 	<script src="assets/js/TextPlugin.min.js"></script>
+	<script src="assets/js/d3.v3.min.js"></script>
+	<script src="assets/js/c3.min.js"></script>
 
 
 
@@ -187,6 +193,10 @@
 <script src="components/units/unitsService.js"></script>
 <script src="components/goodscatalog/goodsController.js"></script>
 <script src="components/goodscatalog/goodsService.js"></script>
+<script src="components/reports/reportsController.js"></script>
+<script src="components/reports/reportsService.js"></script>
+<script src="components/windowcashier/windowcashierController.js"></script>
+<script src="components/windowcashier/windowcashierService.js"></script>
 
 
 </html>
