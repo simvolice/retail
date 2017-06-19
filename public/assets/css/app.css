@@ -1,11 +1,24 @@
+
+
+
+
 html,
 .custom__md-content__categ {
     background-color: #CCCCCC !important;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
 
 
@@ -159,4 +172,65 @@ table.md-table td.md-cell {
     font-size: 5vw;
 
 
+}
+
+
+.custom__btn__goodsgo {
+    width: 100px;
+    height: 100px;
+
+
+
+}
+
+.custom__title__btn__goodsgo {
+    width: 100px;
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    padding-right: 10px;
+    white-space: pre-wrap;
+    line-height: normal;
+}
+
+.custom__doc__img {
+
+
+    position: relative;
+    z-index: 9999;
+    background-position-x: center;
+    background-position-y: center;
+
+    background-image: url("../img/file.svg");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+
+
+}
+
+.custom__btn__doc {
+    z-index: 1;
+    max-height: 20px;
+    max-width: 20px;
+    min-width: 20px;
+    min-height: 20px;
+
+    margin-left: 85px;
+
+
+}
+
+
+#Capa_1{
+
+    height: 150px;
+    width: 150px;
+
+    visibility: hidden;
+}
+
+
+tbody.hide__checkbox > tr > td > md-checkbox {
+    display: none;
 }

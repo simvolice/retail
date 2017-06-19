@@ -69,4 +69,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'components/windowcashier/windowcashierView.html'
       })
 
+      .state('goodsgo', {
+        url: '/goodsgo',
+        templateUrl: 'components/goodsgo/goodsgoView.html'
+      })
+
 });
